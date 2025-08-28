@@ -1,0 +1,22 @@
+Questão 4
+
+• Qual é a diferença entre tipagem estática e dinâmica?
+  Na tipagem estática, o tipo é inferido pela variável e a checagem (type checking) é feita durante a compilação.
+  Na tipagem dinâmica, o tipo é inferido pelo valor do dado e a checagem (type checking) é feita em tempo de execução (runtime).
+
+• Dê exemplos de linguagens que usem tipagem estática e exemplos de linguagens que usem tipagem dinâmica.
+  Tipagem estática- C, C++, Java, C#
+  Tipagem dinâmica- Python, JavaScript, Ruby, PHP
+
+• Por quê uma linguagem com tipagem estática é tipicamente mais rápida do que uma com tipagem dinâmica? Justifique usando um exemplo.
+  Porque durante a execução de uma linguagaem com tipagem estática, o código já foi “traduzido” para linguagem máquina e a checagem/tipagem das variáveis já foi feito.
+  Em c:                        Em Python: 
+																
+			  int n1= 3;                          a= 3
+        int n2= 2;                          b=2
+        int soma;                           soma= a+b
+        soma= n1+n2 
+
+  -Em C, o compilador já sabe que n1 e n2 são inteiros. Ele gera uma instrução pronta de soma de inteiros, sem perder tempo verificando se a ou b são realmente números.
+  -Em Python, o compilador não sabe antes que tipo de dado a e b têm.
+   Então, na hora de somar (a + b), ele precisa verificar o tipo de cada um e descobrir como fazer a soma enquanto o programa roda. Por isso, ele é mais lento
