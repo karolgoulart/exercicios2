@@ -1,0 +1,45 @@
+Questão 3
+
+#include <stdio.h>
+
+int main (void) 
+{
+    short int temps[50];
+    short int soma=0;
+    float media;
+    short int acimamedia;
+    short int i=1;
+
+    while (i<=50){
+        printf ("Insira a temperatura %hd: \n", i);
+        scanf("%hd", &temps[i]);
+        fflush(stdin);
+        if(temps[i]<-100 || temps[i]>100){
+            printf("A temperatura não está dentro do limite exigido.\n");
+            break;
+        }
+        else{
+            soma+=temps[i];
+            
+        }
+        i++;
+    }
+        
+    media= soma/50;
+    
+    for (i=1; i<=50; i++){
+        if (temps[i]>media){
+            acimamedia++;
+        }
+    }
+
+    printf("Média: %.2f\n", media);
+    printf("Quantidade de temperaturas acima da média: %hd\n", acimamedia);
+
+    
+
+    return 0;
+}
+  
+
+  
